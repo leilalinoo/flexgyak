@@ -1,0 +1,48 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+}
+
+article header, article p{
+    color: purple;
+    font-size: 15px;
+    padding: 3px;
+    margin: 5px;
+}
+article header{
+    background-color: black;
+    font-size: 25px
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+article{
+    text-align: justify;
+    color: beige;
+    margin: 5px;
+    background: #9c9c9c;
+    flex: 1 1 200px;
+}
+article:nth-of-type(1){
+    order: 3;
+}
+article:nth-of-type(2){
+    order: 2;
+}
+article:nth-of-type(3){
+    order: 5;
+}
+article:nth-of-type(4){
+    flex-grow: 10;
+    order: 1;
+}
+article:nth-of-type(5){
+    order: 4;
+}
